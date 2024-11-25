@@ -1,0 +1,252 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav_bar {
+    background-color:#9bdf1e; 
+    display: flex;
+    justify-content: space-between; 
+     padding-left: 30px;
+     padding-right: 30px;
+}
+
+img{
+width: 80px;    
+}
+
+.logo {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.hand_calculator {
+    width: 80%;
+}
+
+.calculaor_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    font-size: 30px;
+    padding: 28px;
+    margin: 5px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+#display{
+    width: 100%;
+    height: 90px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;   
+}
+
+input {
+   margin-top: 100px;
+   margin-bottom: 20px;
+   background: transparent;
+   outline: none;
+   border: none;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+footer{
+    background-color: #9bdf1e;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+/* animation===================---------- */
+.right_side{
+    display: inline-block;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+.right_side::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #9bdf1e;
+    transition: width 1s ease;
+    margin-top: 30%;
+}
+
+.right_side:hover::before {
+    width: 100%;
+}
+
+  .nav_bar {
+    padding: 20px 40px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    background-color: #9bdf1e;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .nav_bar::before,
+  .nav_bar::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+
+  .nav_bar::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+.nav_bar::after {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav_bar:hover::before,
+  .nav_bar:hover::after {
+    width: 100%;
+  }
+
+  .nav_bar::before {
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav_bar:hover::before {
+    transform: scaleX(1);
+  }
+
+  .nav_bar::after {
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav_bar:hover::after {
+    transform: scaleX(1);
+  }
+
+/* animation========================end------------------- */
+
+
+
+
+
+
+
+/* Responsive========================= */
+@media screen and (max-width: 1190px) {
+
+.calculaor_container{
+    display: flex;
+    flex-direction: column-reverse;
+    } 
+
+.hand_calculator {
+        width: 100%;
+    } 
+
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        font-size: 50px;
+        font-weight: 800;
+    }
+  
+    }
+
+@media screen and (max-width: 650px) {
+    .logo {
+        font-size: 50px;
+        font-weight: 800;
+    }
+  
+    }
+
+    
+    
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 50px;
+        font-weight: 800;
+    }
+  
+    }
+    
+@media screen and (max-width: 440px) {
+    img{
+        width: 60px;    
+        }
+        
+        .logo {
+            font-size: 40px;
+            font-weight: 900;
+        }
+        
+  
+    }
+@media screen and (max-width: 400px) {
+    .buttons button{
+        padding: 20px;
+        margin: 5px;
+    }
+  
+    
+    #display{
+        width: 100%;
+        height: 80px;
+        font-size: 24px;
+        text-align: right;
+        padding: 10px;
+    }
+    .right_side{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+ 
+    }
+    
+    @media screen and (max-width: 390px) {
+        .buttons button{
+            padding: 18px;
+            margin: 5px;
+        }
+        #display{
+            width: 95%;
+            height: 80px;
+           
+        }
+    }
